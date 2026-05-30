@@ -73,7 +73,55 @@ nav a.active{
 Add this CSS at the bottom of your `style.css` file:
 
 ```css
-/* MOBILE STICKY BOTTOM BAR */
+# Updated Sticky Call & WhatsApp Buttons
+
+Replace your previous sticky button CSS with this updated version in `style.css`:
+
+```css id="d7k3ms"
+/* ====================================
+STICKY CALL & WHATSAPP BUTTONS
+==================================== */
+
+/* DESKTOP FLOATING BUTTONS */
+
+.float-buttons{
+    position:fixed;
+    right:20px;
+    bottom:25px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:99999;
+}
+
+.float-buttons a{
+    width:60px;
+    height:60px;
+    border-radius:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    text-decoration:none;
+    font-size:24px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.25);
+    transition:0.3s;
+}
+
+.float-buttons a:hover{
+    transform:translateY(-4px);
+}
+
+.call-btn{
+    background:#c98aa5;
+}
+
+.whatsapp-btn{
+    background:#25d366;
+}
+
+
+/* MOBILE & TABLET STICKY BAR */
 
 .mobile-bottom-bar{
     position:fixed;
@@ -108,22 +156,30 @@ Add this CSS at the bottom of your `style.css` file:
     background:#25d366;
 }
 
-/* Show only on tablets & mobile */
+
+/* TABLET & MOBILE VIEW */
 
 @media(max-width:991px){
+
+    /* show sticky bottom bar */
 
     .mobile-bottom-bar{
         display:grid;
     }
 
-    body{
-        padding-bottom:75px;
-    }
+    /* hide desktop floating buttons */
 
     .float-buttons{
         display:none;
     }
+
+    /* prevent content overlap */
+
+    body{
+        padding-bottom:75px;
+    }
 }
+
 
 
 
