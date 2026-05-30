@@ -618,6 +618,106 @@ HIGHLIGHTED BOOK APPOINTMENT BUTTON
         box-shadow:0 0 0 0 rgba(255,79,135,0);
     }
 }
+/* ====================================
+DESKTOP RIGHT STICKY BUTTONS
+==================================== */
+
+.float-buttons{
+    position:fixed;
+    right:20px;
+    left:auto;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:99999;
+}
+
+.float-buttons a{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:26px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.25);
+}
+
+.call-btn{
+    background:#c98aa5;
+}
+
+.whatsapp-btn{
+    background:#25d366;
+}
+
+
+
+/* ====================================
+MOBILE STICKY BOTTOM BAR
+==================================== */
+
+.mobile-bottom-bar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    display:none;
+    grid-template-columns:1fr 1fr;
+    z-index:99999;
+    box-shadow:0 -2px 12px rgba(0,0,0,0.15);
+}
+
+.mobile-bottom-bar a{
+    padding:16px 10px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+.mobile-call{
+    background:#c98aa5;
+}
+
+.mobile-whatsapp{
+    background:#25d366;
+}
+
+
+
+/* ====================================
+MOBILE & TABLET
+==================================== */
+
+@media(max-width:991px){
+
+    /* HIDE DESKTOP BUTTONS */
+
+    .float-buttons{
+        display:none !important;
+    }
+
+    /* SHOW MOBILE BAR */
+
+    .mobile-bottom-bar{
+        display:grid;
+    }
+
+    body{
+        padding-bottom:75px;
+    }
+}
 
 
 
