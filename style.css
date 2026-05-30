@@ -68,34 +68,63 @@ nav a.active{
     background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
     display:flex;
 }
+# Sticky Mobile Bottom Bar Code
 
-/* ---- Sticky Bottom Bar (Mobile) ---- */
-.sticky-bottom {
-  position: fixed; bottom: 0; left: 0; right: 0; z-index: 998;
-  background: var(--white); padding: 0.75rem 1rem;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
-  display: flex; gap: 0.75rem; justify-content: center;
-}
-.sticky-bottom .btn { padding: 0.875rem 1.5rem; font-size: 0.9rem; flex: 1; max-width: 200px; }
+Add this CSS at the bottom of your `style.css` file:
 
-@media (min-width: 1024px) {
-  .menu-toggle { display: none; }
-  .nav-desktop { display: flex; gap: 0.5rem; }
-  .services-grid { grid-template-columns: repeat(3, 1fr); }
-  .why-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
-  .contact-grid { grid-template-columns: 1.2fr 1fr; }
-  .sticky-bottom { display: none; }
-  .whatsapp-float { bottom: 30px; }
-  body { padding-bottom: 0; }
+```css
+/* MOBILE STICKY BOTTOM BAR */
+
+.mobile-bottom-bar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    display:none;
+    grid-template-columns:1fr 1fr;
+    z-index:99999;
+    box-shadow:0 -2px 12px rgba(0,0,0,0.15);
 }
 
-/* Hide sticky bottom on desktop */
-@media (min-width: 1024px) {
-  .sticky-bottom { display: none !important; }
+.mobile-bottom-bar a{
+    padding:16px 10px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
 }
 
-/* Always show sticky bottom on mobile */
-@media (max-width: 1023px) {
-  body { padding-bottom: 80px; }
+.mobile-call{
+    background:#c98aa5;
 }
+
+.mobile-whatsapp{
+    background:#25d366;
+}
+
+/* Show only on tablets & mobile */
+
+@media(max-width:991px){
+
+    .mobile-bottom-bar{
+        display:grid;
+    }
+
+    body{
+        padding-bottom:75px;
+    }
+
+    .float-buttons{
+        display:none;
+    }
+}
+
+
+
+
