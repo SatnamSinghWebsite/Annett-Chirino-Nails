@@ -934,6 +934,202 @@ MODERN CONTACT PAGE
         font-size:28px;
     }
 }
+# Add This CSS at the END of style.css
+
+/* ====================================
+MODERN ABOUT PAGE
+==================================== */
+
+.about-hero{
+    height:70vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1600&auto=format&fit=crop')
+    center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+
+.about-overlay{
+    max-width:750px;
+    padding:20px;
+    animation:fadeUp 1s ease;
+}
+
+.about-overlay h1{
+    font-size:62px;
+    margin-bottom:20px;
+}
+
+.about-overlay p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.about-section{
+    padding:90px 0;
+    background:#faf7f9;
+}
+
+.about-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+}
+
+.about-image img:hover{
+    transform:scale(1.03);
+}
+
+.about-content h2{
+    font-size:42px;
+    color:#c98aa5;
+    margin-bottom:25px;
+}
+
+.about-content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.why-section{
+    padding:90px 0;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.why-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+}
+
+.why-icon{
+    width:90px;
+    height:90px;
+    margin:auto;
+    margin-bottom:25px;
+    border-radius:50%;
+    background:#c98aa5;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+}
+
+.why-card h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+.social-icons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:16px;
+}
+
+.social-icons a{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#c98aa5;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:20px;
+    transition:0.3s ease;
+}
+
+.social-icons a:hover{
+    transform:translateY(-4px);
+    background:#b67190;
+}
+
+
+/* ====================================
+MOBILE FRIENDLY
+==================================== */
+
+@media(max-width:991px){
+
+    .about-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .about-overlay h1{
+        font-size:42px;
+    }
+
+    .about-content{
+        text-align:center;
+    }
+
+    .about-content h2{
+        font-size:34px;
+    }
+
+    .about-section{
+        padding:70px 0;
+    }
+
+    .why-section{
+        padding:70px 0;
+    }
+}
+
+
+@media(max-width:576px){
+
+    .about-overlay h1{
+        font-size:34px;
+    }
+
+    .about-overlay p{
+        font-size:16px;
+    }
+
+    .about-content h2{
+        font-size:30px;
+    }
+
+    .why-card{
+        padding:30px 20px;
+    }
+}
+
 
 
 
