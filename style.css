@@ -1262,6 +1262,89 @@ MOBILE FRIENDLY
         font-size:34px;
     }
 }
+```css id="reviewcardsstyle"
+/* ====================================
+REVIEW CARDS
+==================================== */
+
+.reviews-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.review-card{
+    background:#fff;
+    padding:40px 35px;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+    text-align:left;
+}
+
+.review-card:hover{
+    transform:translateY(-10px);
+}
+
+.review-stars{
+    margin-bottom:20px;
+}
+
+/* GOOGLE STYLE YELLOW STARS */
+
+.review-stars i{
+    color:#fbbc04;
+    font-size:20px;
+    margin-right:3px;
+}
+
+.review-card p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:22px;
+    font-style:italic;
+}
+
+.review-card h4{
+    color:#c98aa5;
+    font-size:20px;
+}
+
+
+
+/* ====================================
+KEEP STICKY BUTTONS
+==================================== */
+
+/* DESKTOP */
+
+.float-buttons{
+    position:fixed;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:99999;
+}
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+    .float-buttons{
+        display:none !important;
+    }
+
+    .mobile-bottom-bar{
+        display:grid;
+    }
+
+    body{
+        padding-bottom:75px;
+    }
+}
 
 
 
