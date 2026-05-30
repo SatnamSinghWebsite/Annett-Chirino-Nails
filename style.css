@@ -216,3 +216,22 @@ STICKY CALL & WHATSAPP BUTTONS
     background:#25d366;
 }
 
+
+/* HIDE DESKTOP FLOATING BUTTONS ON MOBILE & TABLET */
+
+@media(max-width:991px){
+
+    .float-buttons{
+        display:none !important;
+    }
+
+    .mobile-bottom-bar{
+        display:grid;
+    }
+
+    body{
+        padding-bottom:75px;
+    }
+}
+
+
