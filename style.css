@@ -180,25 +180,12 @@ STICKY CALL & WHATSAPP BUTTONS
     }
 }
 
-# Desktop Sticky Right Side Buttons
-
-Use this CSS for desktop floating sticky buttons in your `style.css`.
-
-This keeps the buttons:
-
-* Fixed on the right side
-* Always visible while scrolling
-* Desktop only
-* No movement on scroll
-
-```css id="q7m5xt"
-/* ====================================
-DESKTOP STICKY RIGHT SIDE BUTTONS
-==================================== */
+/* DESKTOP STICKY RIGHT SIDE BUTTONS */
 
 .float-buttons{
     position:fixed;
     right:20px;
+    left:auto;
     top:50%;
     transform:translateY(-50%);
     display:flex;
@@ -221,10 +208,6 @@ DESKTOP STICKY RIGHT SIDE BUTTONS
     transition:0.3s ease;
 }
 
-.float-buttons a:hover{
-    transform:scale(1.08);
-}
-
 .call-btn{
     background:#c98aa5;
 }
@@ -232,14 +215,4 @@ DESKTOP STICKY RIGHT SIDE BUTTONS
 .whatsapp-btn{
     background:#25d366;
 }
-
-
-
-
-
-
-
-
-
-
 
