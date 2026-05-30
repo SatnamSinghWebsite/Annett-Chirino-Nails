@@ -1678,6 +1678,324 @@ MODERN HOME PAGE
         padding:25px;
     }
 }
+# Add This CSS at the END of style.css
+
+```css id="finalindexcsscode"
+/* ====================================
+MODERN HOME PAGE
+==================================== */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)),
+    url('https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1600&auto=format&fit=crop')
+    center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-overlay{
+    max-width:850px;
+    padding:20px;
+    animation:fadeUp 1s ease;
+}
+
+.hero-overlay h1{
+    font-size:72px;
+    margin-bottom:25px;
+    color:#b67190;
+    font-weight:800;
+    text-shadow:0 3px 10px rgba(255,255,255,0.8);
+}
+
+.hero-overlay p{
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:35px;
+    color:#444;
+    background:rgba(255,255,255,0.75);
+    padding:18px 22px;
+    border-radius:18px;
+    display:inline-block;
+}
+
+.features-section{
+    padding:90px 0;
+    background:#faf7f9;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-icon{
+    width:90px;
+    height:90px;
+    margin:auto;
+    margin-bottom:25px;
+    border-radius:50%;
+    background:#c98aa5;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+}
+
+.home-about{
+    padding:90px 0;
+}
+
+.home-about-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.home-about-image img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.home-about-content h2{
+    font-size:48px;
+    color:#c98aa5;
+    margin-bottom:25px;
+}
+
+.home-about-content p{
+    line-height:1.8;
+    color:#555;
+    margin-bottom:20px;
+}
+
+.services-preview{
+    padding:90px 0;
+    background:#faf7f9;
+}
+
+.services-preview-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.service-preview-card{
+    background:#fff;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+}
+
+.service-preview-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-preview-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.service-preview-content{
+    padding:30px;
+}
+
+.service-preview-content h3{
+    margin-bottom:15px;
+    font-size:28px;
+    color:#c98aa5;
+}
+
+.service-preview-content p{
+    color:#666;
+    line-height:1.7;
+}
+
+.bottom-services-btn{
+    text-align:center;
+    margin-top:50px;
+}
+
+.home-cta{
+    background:#c98aa5;
+    color:#fff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.home-cta h2{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.home-cta p{
+    margin-bottom:35px;
+    font-size:20px;
+}
+
+
+
+/* ====================================
+STICKY BUTTONS
+==================================== */
+
+.float-buttons{
+    position:fixed;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:99999;
+}
+
+.float-buttons a{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:26px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.25);
+}
+
+.call-btn{
+    background:#c98aa5;
+}
+
+.whatsapp-btn{
+    background:#25d366;
+}
+
+
+
+/* MOBILE STICKY BAR */
+
+.mobile-bottom-bar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    display:none;
+    grid-template-columns:1fr 1fr;
+    z-index:99999;
+    box-shadow:0 -2px 12px rgba(0,0,0,0.15);
+}
+
+.mobile-bottom-bar a{
+    padding:16px 10px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+.mobile-call{
+    background:#c98aa5;
+}
+
+.mobile-whatsapp{
+    background:#25d366;
+}
+
+
+
+/* ====================================
+MOBILE RESPONSIVE
+==================================== */
+
+@media(max-width:991px){
+
+    .float-buttons{
+        display:none !important;
+    }
+
+    .mobile-bottom-bar{
+        display:grid;
+    }
+
+    body{
+        padding-bottom:75px;
+    }
+
+    .hero-overlay h1{
+        font-size:48px;
+    }
+
+    .hero-overlay p{
+        font-size:18px;
+    }
+
+    .home-about-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .home-about-content{
+        text-align:center;
+    }
+
+    .home-about-content h2{
+        font-size:38px;
+    }
+}
+
+@media(max-width:576px){
+
+    .hero{
+        height:90vh;
+    }
+
+    .hero-overlay h1{
+        font-size:34px;
+    }
+
+    .hero-overlay p{
+        font-size:15px;
+        padding:14px 18px;
+    }
+
+    .home-cta h2{
+        font-size:34px;
+    }
+
+    .service-preview-content{
+        padding:25px;
+    }
+}
+
 
 
 
