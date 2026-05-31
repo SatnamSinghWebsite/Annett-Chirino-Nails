@@ -1512,7 +1512,7 @@ MODERN HOME PAGE
     padding:40px 30px;
     border-radius:25px;
     text-align:center;
-    box-shadow: none;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
     transition:0.4s ease;
 }
 
